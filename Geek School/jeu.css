@@ -1,0 +1,142 @@
+@font-face {
+    font-family: police1;
+    src: url(Easy-free.otf);
+}
+
+@font-face {
+    font-family: police2;
+    src: url('easyridesuperital.ttf');
+}
+
+@font-face {
+    font-family: police3;
+    src: url('Slugs Racer.ttf');
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    margin: 0px;
+    height: 100%;
+    font-size: 25px;
+}
+
+#menu {
+    flex: 0 0 200px;
+    text-align: center;
+    background-color: rgb(129, 184, 232);
+    color: rgb(211, 5, 5);
+}
+
+#logo {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+#contenu {
+    flex: 1 1 800px;
+    background: url(fond\ jeu.jpg) no-repeat center / cover;
+}
+
+#grille {
+    display: none;
+    border: 3px solid black;
+    margin: auto;
+}
+
+
+#titre_du_jeu {
+    font-family: police3;
+}
+
+.boutonsdedifficulte {
+    width: 200px;
+    height: 100px;
+    margin: 8px;
+    border: 3px solid rgb(40, 182, 207);
+    border-radius: 10px;
+    font-size: 200%;
+    transition: 0.1s;
+}
+
+.boutonsdedifficulte:hover {
+    margin-left: 24px;
+    cursor: pointer;
+}
+
+#facile {
+    font-family: police1;
+    background-color: rgb(12, 219, 12);
+}
+
+#facile:hover {
+    background: rgb(9, 181, 9);
+}
+
+#moyen {
+    font-family: police2;
+    background-color: orange;
+}
+
+#moyen:hover {
+    background: rgb(233, 151, 0);
+}
+
+#difficulte {
+    font-family: police3;
+    background-color: red;
+    font-size: 130%;
+}
+
+#difficulte:hover {
+    background: rgb(226, 0, 0);
+}
+
+#grille td {
+    margin: auto;
+    width: 48px;
+    height: 48px;
+    border: 1px solid blue;
+    background: rgba(0, 0, 0, 0.445);
+    font-size: 170%;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+}
+
+#grille td:hover {
+    margin-left: 8px;
+}
+
+#grille td.indesirable {
+    background: rgba(0, 0, 0, 0.445) url(case_a_eviter.jpg) no-repeat center / contain;
+}
+
+#grille td.masque {
+    background: linear-gradient(rgb(27, 197, 27));
+    font-size: 0px;
+}
+
+#grille td.masque.drapeau {
+    background: url(panneau_attention.png) no-repeat center / contain, linear-gradient(rgb(27, 197, 27));
+}
+
+#victoire {
+    display: none;
+    text-align: center;
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+#perdu {
+    display: none;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
