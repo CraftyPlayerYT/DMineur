@@ -113,7 +113,7 @@ body {
 }
 
 #grille td.indesirable {
-    background: rgba(0, 0, 0, 0.445) url(case_a_eviter.jpg) no-repeat center / contain;
+    background: rgba(0, 0, 0, 0.445) url(case_a_eviter.png) no-repeat center / contain;
 }
 
 #grille td.masque {
